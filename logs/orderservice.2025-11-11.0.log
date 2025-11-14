@@ -1,0 +1,35 @@
+2025-11-11 08:48:20.924 [http-nio-8083-exec-3] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-11 08:48:20.942 [http-nio-8083-exec-3] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-11 08:48:21.028 [http-nio-8083-exec-3] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.web.servlet.DispatcherServlet - Completed initialization in 78 ms
+2025-11-11 08:48:21.573 [http-nio-8083-exec-3] INFO  [sessionId=8C6F67BBF961C003B544B9577C4025D9]
+        [reqId=7544aee1] [traceId=a349d8a8e67546cc84a30a2074405c63] [spanId=29bf1e1d-7f90-45] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/8C6F67BBF961C003B544B9577C4025D9] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.controller.OrderController - Incoming GET request to /petstoreorderservice/v2/store/order/8C6F67BBF961C003B544B9577C4025D9
+2025-11-11 08:48:21.582 [http-nio-8083-exec-3] INFO  [sessionId=8C6F67BBF961C003B544B9577C4025D9]
+        [reqId=7544aee1] [traceId=a349d8a8e67546cc84a30a2074405c63] [spanId=29bf1e1d-7f90-45] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/8C6F67BBF961C003B544B9577C4025D9] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Retrieving order from cache: 8C6F67BBF961C003B544B9577C4025D9
+2025-11-11 08:48:21.582 [http-nio-8083-exec-3] WARN  [sessionId=8C6F67BBF961C003B544B9577C4025D9]
+        [reqId=7544aee1] [traceId=a349d8a8e67546cc84a30a2074405c63] [spanId=29bf1e1d-7f90-45] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/8C6F67BBF961C003B544B9577C4025D9] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Order not found: 8C6F67BBF961C003B544B9577C4025D9
+2025-11-11 08:48:21.589 [http-nio-8083-exec-3] WARN  [sessionId=8C6F67BBF961C003B544B9577C4025D9]
+        [reqId=7544aee1] [traceId=a349d8a8e67546cc84a30a2074405c63] [spanId=29bf1e1d-7f90-45] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/8C6F67BBF961C003B544B9577C4025D9] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.e.GlobalExceptionHandler - Order not found: Order with ID 8C6F67BBF961C003B544B9577C4025D9 not found

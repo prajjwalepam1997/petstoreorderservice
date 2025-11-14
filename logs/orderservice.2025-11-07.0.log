@@ -1,0 +1,260 @@
+2025-11-07 22:14:36.104 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        c.c.p.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 19096 (C:\mzdev\cloudx-java-azure-dev\petstore\petstoreorderservice\target\classes started by PrajjwalPandey in C:\mzdev\cloudx-java-azure-dev\petstore\petstoreorderservice)
+2025-11-07 22:14:36.108 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        c.c.p.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-07 22:14:38.331 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-07 22:14:38.359 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-07 22:14:38.360 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-11-07 22:14:38.456 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-07 22:14:38.456 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2290 ms
+2025-11-07 22:14:39.056 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        c.c.p.o.config.RestTemplateConfig - RestTemplate configured with TracingInterceptor for automatic header propagation
+2025-11-07 22:14:41.274 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-07 22:14:41.476 [main] WARN  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-07 22:14:41.529 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-07 22:14:41.573 [main] ERROR [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-07 22:16:11.239 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        c.c.p.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 4552 (C:\mzdev\cloudx-java-azure-dev\petstore\petstoreorderservice\target\classes started by PrajjwalPandey in C:\mzdev\cloudx-java-azure-dev\petstore\petstoreorderservice)
+2025-11-07 22:16:11.241 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        c.c.p.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-07 22:16:12.771 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-11-07 22:16:12.785 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-07 22:16:12.785 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-11-07 22:16:12.838 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-07 22:16:12.839 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1545 ms
+2025-11-07 22:16:13.132 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        c.c.p.o.config.RestTemplateConfig - RestTemplate configured with TracingInterceptor for automatic header propagation
+2025-11-07 22:16:13.741 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-07 22:16:13.808 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-11-07 22:16:13.820 [main] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        c.c.p.order.OrderServiceApplication - Started OrderServiceApplication in 3.419 seconds (process running for 3.928)
+2025-11-07 22:21:23.619 [http-nio-8083-exec-3] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-07 22:21:23.619 [http-nio-8083-exec-3] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-07 22:21:23.624 [http-nio-8083-exec-3] INFO  [sessionId=NO_SESSION]
+        [reqId=] [traceId=] [spanId=] [parentSpan=]
+        [uri=] [method=] [status=]
+        [duration=ms] [clientIp=] [userAgent=]
+        o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-11-07 22:21:50.604 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.controller.OrderController - Incoming POST request to /petstoreorderservice/v2/store/order with order: Order(id=2BCA874F99AF82A564E034DC800B8317, email=null, products=[Product(id=5, quantity=1, name=null, photoURL=null)], status=null, complete=false)
+2025-11-07 22:21:50.619 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Updating order: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.621 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.ProductService - Retrieving products from: http://localhost:8082/petstoreproductservice/v2/product/findByStatus?status=available
+2025-11-07 22:21:50.670 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.ProductService - Successfully retrieved 11 products from product service
+2025-11-07 22:21:50.685 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Getting or creating order: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.685 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Creating new order for update: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.685 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Creating new order with id: 2BCA874F99AF82A564E034DC800B8317 and caching it
+2025-11-07 22:21:50.685 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Added new product 5 with quantity 1 to order 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.687 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Enriching order 2BCA874F99AF82A564E034DC800B8317 with 11 available products
+2025-11-07 22:21:50.687 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Enriched product 5: 'null' -> 'Large Breed Dry Food', URL: 'null' -> 'https://raw.githubusercontent.com/chtrembl/staticcontent/master/dog-food/large-dog.jpg?raw=true'
+2025-11-07 22:21:50.687 [http-nio-8083-exec-5] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=de716382] [traceId=e170ecb835ee445ba9be5b7f50665780] [spanId=81993bfa-b9d4-43] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order] [method=POST] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.controller.OrderController - Successfully processed order: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.738 [http-nio-8083-exec-6] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=49816fb1] [traceId=e7ee2cdf26204958afce733462670666] [spanId=3ff48b6d-9bb6-48] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.controller.OrderController - Incoming GET request to /petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.738 [http-nio-8083-exec-6] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=49816fb1] [traceId=e7ee2cdf26204958afce733462670666] [spanId=3ff48b6d-9bb6-48] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Retrieving order from cache: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.738 [http-nio-8083-exec-6] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=49816fb1] [traceId=e7ee2cdf26204958afce733462670666] [spanId=3ff48b6d-9bb6-48] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Found existing order: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:21:50.738 [http-nio-8083-exec-6] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=49816fb1] [traceId=e7ee2cdf26204958afce733462670666] [spanId=3ff48b6d-9bb6-48] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Enriching order 2BCA874F99AF82A564E034DC800B8317 with 11 available products
+2025-11-07 22:21:50.738 [http-nio-8083-exec-6] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=49816fb1] [traceId=e7ee2cdf26204958afce733462670666] [spanId=3ff48b6d-9bb6-48] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Enriched product 5: 'Large Breed Dry Food' -> 'Large Breed Dry Food', URL: 'https://raw.githubusercontent.com/chtrembl/staticcontent/master/dog-food/large-dog.jpg?raw=true' -> 'https://raw.githubusercontent.com/chtrembl/staticcontent/master/dog-food/large-dog.jpg?raw=true'
+2025-11-07 22:21:50.738 [http-nio-8083-exec-6] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=49816fb1] [traceId=e7ee2cdf26204958afce733462670666] [spanId=3ff48b6d-9bb6-48] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.controller.OrderController - Successfully retrieved order: Order(id=2BCA874F99AF82A564E034DC800B8317, email=null, products=[Product(id=5, quantity=1, name=Large Breed Dry Food, photoURL=https://raw.githubusercontent.com/chtrembl/staticcontent/master/dog-food/large-dog.jpg?raw=true)], status=placed, complete=false)
+2025-11-07 22:22:00.611 [http-nio-8083-exec-8] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=ec9c9355] [traceId=00bc2f1270b34fcd8a4e2d0bc59d9185] [spanId=22563484-071b-47] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.controller.OrderController - Incoming GET request to /petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:22:00.612 [http-nio-8083-exec-8] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=ec9c9355] [traceId=00bc2f1270b34fcd8a4e2d0bc59d9185] [spanId=22563484-071b-47] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Retrieving order from cache: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:22:00.612 [http-nio-8083-exec-8] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=ec9c9355] [traceId=00bc2f1270b34fcd8a4e2d0bc59d9185] [spanId=22563484-071b-47] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Found existing order: 2BCA874F99AF82A564E034DC800B8317
+2025-11-07 22:22:00.612 [http-nio-8083-exec-8] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=ec9c9355] [traceId=00bc2f1270b34fcd8a4e2d0bc59d9185] [spanId=22563484-071b-47] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Enriching order 2BCA874F99AF82A564E034DC800B8317 with 11 available products
+2025-11-07 22:22:00.612 [http-nio-8083-exec-8] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=ec9c9355] [traceId=00bc2f1270b34fcd8a4e2d0bc59d9185] [spanId=22563484-071b-47] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.order.service.OrderService - Enriched product 5: 'Large Breed Dry Food' -> 'Large Breed Dry Food', URL: 'https://raw.githubusercontent.com/chtrembl/staticcontent/master/dog-food/large-dog.jpg?raw=true' -> 'https://raw.githubusercontent.com/chtrembl/staticcontent/master/dog-food/large-dog.jpg?raw=true'
+2025-11-07 22:22:00.612 [http-nio-8083-exec-8] INFO  [sessionId=2BCA874F99AF82A564E034DC800B8317]
+        [reqId=ec9c9355] [traceId=00bc2f1270b34fcd8a4e2d0bc59d9185] [spanId=22563484-071b-47] [parentSpan=]
+        [uri=/petstoreorderservice/v2/store/order/2BCA874F99AF82A564E034DC800B8317] [method=GET] [status=]
+        [duration=ms] [clientIp=127.0.0.1] [userAgent=Java/21.0.9]
+        c.c.p.o.controller.OrderController - Successfully retrieved order: Order(id=2BCA874F99AF82A564E034DC800B8317, email=null, products=[Product(id=5, quantity=1, name=Large Breed Dry Food, photoURL=https://raw.githubusercontent.com/chtrembl/staticcontent/master/dog-food/large-dog.jpg?raw=true)], status=placed, complete=false)
