@@ -22,6 +22,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.List;
 
@@ -63,13 +64,23 @@ public class OrderController {
 
         // Send order data to the external API
         try {
+            log.info("Preparing to send order data to external API. Order ID: {}", updatedOrder.getId());
+            
+            // Create ObjectMapper for JSON serialization
+            ObjectMapper objectMapper = new ObjectMapper();
+            String orderJson = objectMapper.writeValueAsString(updatedOrder);
+            log.debug("Order JSON to be sent: {}", orderJson);
+            
             RestTemplate restTemplate = new RestTemplate();
             String url = "https://orderitemreserver.jollybay-0edbfd43.centralindia.azurecontainerapps.io/api/SaveJsonToBlob";
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
-
-            HttpEntity<Order> request = new HttpEntity<>(updatedOrder, headers);
+            
+            // Create request with the JSON string directly
+            HttpEntity<String> request = new HttpEntity<>(orderJson, headers);
+            
+            log.info("Sending POST request to: {}", url);
             String response = restTemplate.postForObject(url, request, String.class);
 
             log.info("Successfully sent order data to external API. Response: {}", response);
