@@ -15,15 +15,13 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -62,6 +60,23 @@ public class OrderController {
         // Enrich order with product details from product service
         List<Product> availableProducts = productService.getAvailableProducts();
         orderService.enrichOrderWithProductDetails(updatedOrder, availableProducts);
+
+        // Send order data to the external API
+        try {
+            RestTemplate restTemplate = new RestTemplate();
+            String url = "https://orderitemreserver.jollybay-0edbfd43.centralindia.azurecontainerapps.io/api/SaveJsonToBlob";
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<Order> request = new HttpEntity<>(updatedOrder, headers);
+            String response = restTemplate.postForObject(url, request, String.class);
+
+            log.info("Successfully sent order data to external API. Response: {}", response);
+        } catch (Exception e) {
+            log.error("Error sending order data to external API: {}", e.getMessage(), e);
+            // Continue with the response even if the external API call fails
+        }
         
         log.info("Successfully processed order: {}", updatedOrder.getId());
 
