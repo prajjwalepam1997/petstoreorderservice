@@ -4,6 +4,7 @@ import com.chtrembl.petstore.order.model.Order;
 import com.chtrembl.petstore.order.model.Product;
 import com.chtrembl.petstore.order.service.OrderService;
 import com.chtrembl.petstore.order.service.ProductService;
+import com.chtrembl.petstore.order.service.ServiceBusSenderService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -15,13 +16,10 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.List;
@@ -36,6 +34,8 @@ public class OrderController {
 
     private final OrderService orderService;
     private final ProductService productService;
+    private final ServiceBusSenderService serviceBusSenderService;
+    private final ObjectMapper objectMapper;
 
     @Operation(
             summary = "Place an order for a product",
@@ -62,31 +62,23 @@ public class OrderController {
         List<Product> availableProducts = productService.getAvailableProducts();
         orderService.enrichOrderWithProductDetails(updatedOrder, availableProducts);
 
-        // Send order data to the external API
+        // Send order data to Azure Service Bus
         try {
-            log.info("Preparing to send order data to external API. Order ID: {}", updatedOrder.getId());
+            log.info("Preparing to send order data to Azure Service Bus. Order ID: {}", updatedOrder.getId());
             
-            // Create ObjectMapper for JSON serialization
-            ObjectMapper objectMapper = new ObjectMapper();
             String orderJson = objectMapper.writeValueAsString(updatedOrder);
             log.debug("Order JSON to be sent: {}", orderJson);
             
-            RestTemplate restTemplate = new RestTemplate();
-            String url = "https://orderitemreserver.jollybay-0edbfd43.centralindia.azurecontainerapps.io/api/SaveJsonToBlob";
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
+            boolean sent = serviceBusSenderService.sendMessage(orderJson, updatedOrder.getId());
             
-            // Create request with the JSON string directly
-            HttpEntity<String> request = new HttpEntity<>(orderJson, headers);
-            
-            log.info("Sending POST request to: {}", url);
-            String response = restTemplate.postForObject(url, request, String.class);
-
-            log.info("Successfully sent order data to external API. Response: {}", response);
+            if (sent) {
+                log.info("Successfully sent order data to Azure Service Bus. Order ID: {}", updatedOrder.getId());
+            } else {
+                log.warn("Failed to send order data to Azure Service Bus. Order ID: {}", updatedOrder.getId());
+            }
         } catch (Exception e) {
-            log.error("Error sending order data to external API: {}", e.getMessage(), e);
-            // Continue with the response even if the external API call fails
+            log.error("Error sending order data to Azure Service Bus: {}", e.getMessage(), e);
+            // Continue with the response even if the Service Bus send fails
         }
         
         log.info("Successfully processed order: {}", updatedOrder.getId());
