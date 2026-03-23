@@ -24,7 +24,7 @@
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss</maven.build.timestamp.format>
         <httpclient.version>4.5.14</httpclient.version>
         <azure.cosmos.version>5.24.0</azure.cosmos.version>
-        <azure.servicebus.version>5.19.0</azure.servicebus.version>
+        <azure.servicebus.version>7.17.17</azure.servicebus.version>
     </properties>
 
     <dependencies>
