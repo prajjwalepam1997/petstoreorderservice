@@ -23,17 +23,26 @@ public class ServiceBusSenderService {
             @Value("${azure.servicebus.connection-string}") String connectionString,
             @Value("${azure.servicebus.queue-name}") String queueName) {
         this.queueName = queueName;
-        
+        this.senderClient = initSenderClient(connectionString, queueName);
+    }
+
+    private ServiceBusSenderClient initSenderClient(String connectionString, String queueName) {
         if (connectionString == null || connectionString.isBlank()) {
             log.warn("Azure Service Bus connection string is not configured. Service Bus messaging will be disabled.");
-            this.senderClient = null;
-        } else {
-            this.senderClient = new ServiceBusClientBuilder()
+            return null;
+        }
+        
+        try {
+            ServiceBusSenderClient client = new ServiceBusClientBuilder()
                     .connectionString(connectionString)
                     .sender()
                     .queueName(queueName)
                     .buildClient();
             log.info("Azure Service Bus sender client initialized for queue: {}", queueName);
+            return client;
+        } catch (Exception e) {
+            log.error("Failed to initialize Azure Service Bus client: {}. Service Bus messaging will be disabled.", e.getMessage());
+            return null;
         }
     }
 
